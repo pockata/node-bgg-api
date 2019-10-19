@@ -1,4 +1,3 @@
-require 'newrelic' if process.env.ENVIRONMENT == 'production'
 Hapi = require 'hapi'
 Nipple = require 'nipple'
 querystring = require 'querystring'
