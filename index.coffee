@@ -24,7 +24,7 @@ server = Hapi.createServer '0.0.0.0', port,
 
 getBggEndpoint = (endpoint, params, next)->
   query = querystring.stringify params
-  url = "http://boardgamegeek.com/xmlapi2/#{endpoint}?#{query}"
+  url = "https://boardgamegeek.com/xmlapi2/#{endpoint}?#{query}"
   opts = {}
 
   log "making request to: #{url}"
